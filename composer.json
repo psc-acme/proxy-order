@@ -1,0 +1,43 @@
+{
+    "name": "psc-acme/proxy-order",
+    "description": "Package proxy-order for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\ProxyOrder\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "nikic/php-parser": "^5.0",
+        "symfony/http-kernel": "^6.2",
+        "symfony/filesystem": "^7.0",
+        "psr/cache": "^3.0",
+        "spatie/laravel-permission": "^6.0",
+        "psc-acme/parser-billing": "^1.0",
+        "psc-acme/tracker-billing": "^1.0",
+        "psc-acme/handler-billing": "^1.0"
+    },
+    "require-dev": {
+        "behat/behat": "^3.14",
+        "webforge/object-asserter": "^2.0.0"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
